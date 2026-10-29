@@ -1,0 +1,13 @@
+[package]
+name = "inbox"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4.13.0"
+ferrumec = { version = "0.5", features = ["web", "pg"] }
+serde = { version = "1.0.228", features = ["derive"] }
+sqlx = { version = "0.9", features = ["runtime-tokio", "tls-rustls-ring-webpki", "postgres", "uuid"] }
+tracing = "0.1.44"
+uuid = { version = "1.23.1", features = ["v4", "serde"] }
+viewset = { version = "0.6.6", features = ["web"] }
